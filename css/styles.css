@@ -1,0 +1,370 @@
+/* Ctrl + / - запись комментария
+
+/* Логотип */
+:root {
+  --blaсk-color: #212121;
+  --blu-color: #2196f3;
+  --grey-color: #757575;
+  --white-color: #ffffff;
+  --background-grey: #2f303a;
+  --background-filter: #f5f4fa;
+
+  --margin-filter: 30px;
+}
+* {
+  box-sizing: border-box;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  /* outline: 5px solid red; */
+}
+span {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--blaсk-color);
+}
+/* Шрифты на бади*/
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--black-color);
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+button {
+  font-family: Roboto;
+  cursor: pointer;
+}
+
+/* LOGO */
+header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.logo {
+  margin-right: 93px;
+}
+.logo :hover,
+.logo :focus {
+  color: var(--blu-color);
+}
+.web {
+  color: var(--blu-color);
+}
+
+/* Кнопки навигации */
+.head-con {
+  display: flex;
+  align-items: center;
+}
+.list-nav :nth-child(-n + 2) {
+  margin-right: 25px;
+}
+.list-nav {
+  display: flex;
+}
+.list-nav a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--black-color);
+}
+.list-nav :hover,
+.list-nav :focus {
+  color: var(--blu-color);
+}
+.con {
+  margin-left: auto;
+}
+.con a + a {
+  margin-left: 50px;
+}
+.head-cont {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--grey-color);
+}
+.head-cont:hover,
+.head-cont:focus {
+  color: var(--blu-color);
+}
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--background-grey);
+}
+h1 {
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.order {
+  display: flex;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  color: var(--white-color);
+  background-color: var(--blu-color);
+}
+.order {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.advabtage-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantage {
+  display: flex;
+  margin-left: -30px;
+}
+.advantage li {
+  width: 270px;
+  flex-basis: calc(100% / 4 -30);
+  margin-left: 30px;
+}
+.advantage h3 {
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.advantage p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--grey-color);
+}
+.jobs {
+  padding-bottom: 94px;
+}
+.list-job {
+  display: flex;
+}
+.list-job li + li {
+  margin-left: 30px;
+}
+.jobs h2 {
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.timate {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: #f5f4fa;
+}
+.timate h2 {
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.person {
+  display: flex;
+}
+.person li + li {
+  margin-left: 30px;
+}
+/* .person img {
+  margin-bottom: 30px;
+} */
+.person-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.person h3 {
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--blaсk-color);
+}
+.person p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--grey-color);
+}
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-grey);
+}
+.foot-logo {
+  margin-bottom: 20px;
+  display: flex;
+}
+.web-blu {
+  color: var(--blu-color);
+}
+.studio-white {
+  color: var(--white-color);
+}
+
+.list-address :nth-child(1n) {
+  margin-bottom: 9px;
+}
+
+.address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+.address:hover,
+.address:focus {
+  color: var(--blu-color);
+}
+.con-foot {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.con-foot:hover,
+.con-foot:focus {
+  color: var(--blu-color);
+}
+
+/* portfolio */
+.section-filter {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.list-fil-butt {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.list-fil-butt li + li {
+  margin-left: 8px;
+}
+.filter {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+}
+.filter {
+  background-color: var(--background-filter);
+  color: var(--blak-color);
+}
+.filter:hover,
+.filter:focus {
+  background-color: var(--blu-color);
+  color: var(--white-color);
+}
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--margin-filter));
+  margin-bottom: calc(-1 * var(--margin-filter));
+}
+
+.project h3 {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--blaсk-color);
+}
+.project p {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--grey-color);
+}
+.project li {
+  flex-basis: calc(100 / 3 - var(--margin-filter));
+  margin-left: var(--margin-filter);
+  margin-bottom: var(--margin-filter);
+  width: 370px;
+  left: 1015px;
+  top: 1130px;
+  background-color: var(--white-color);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+.project-list h3 {
+  margin-bottom: 8px;
+}
+.card {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.project :hover,
+.project :focus {
+  background-color: var(--white-color);
+}
