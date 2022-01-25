@@ -119,6 +119,14 @@ header {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--background-grey);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/img_header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 h1 {
   margin-bottom: 40px;
@@ -200,6 +208,15 @@ h1 {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.person p {
+  margin-bottom: 16px;
+}
+.person {
+  display: flex;
+}
+.person .person-list + .person-list {
+  margin-left: 30px;
+}
 .timate {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -213,11 +230,19 @@ h1 {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.person {
+.timate-socials {
   display: flex;
+  justify-content: center;
 }
-.person li + li {
-  margin-left: 30px;
+
+.timate-socials li {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: red;
+}
+.timate-socials li + li {
+  margin-left: 10px;
 }
 /* .person img {
   margin-bottom: 30px;
