@@ -230,23 +230,7 @@ h1 {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.timate-socials {
-  display: flex;
-  justify-content: center;
-}
 
-.timate-socials li {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: red;
-}
-.timate-socials li + li {
-  margin-left: 10px;
-}
-/* .person img {
-  margin-bottom: 30px;
-} */
 .person-card {
   padding-top: 30px;
   padding-bottom: 30px;
