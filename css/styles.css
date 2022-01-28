@@ -350,7 +350,7 @@ footer h2 {
 }
 .footer-contacts-contain {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .footer-social-list {
   display: flex;
