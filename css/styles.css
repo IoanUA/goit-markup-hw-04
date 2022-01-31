@@ -63,6 +63,7 @@ button {
 header {
   padding-top: 24px;
   padding-bottom: 24px;
+  outline: 1px solid #ECECEC;
 }
 .logo {
   margin-right: 93px;
@@ -70,6 +71,7 @@ header {
 .logo :hover,
 .logo :focus {
   color: var(--blu-color);
+  outline: var(--blu-color);
 }
 .web {
   color: var(--blu-color);
@@ -98,6 +100,7 @@ header {
 .list-nav :hover,
 .list-nav :focus {
   color: var(--blu-color);
+  outline: var(--blu-color);
 }
 .header-contacts {
   margin-left: auto;
@@ -122,6 +125,7 @@ header {
 .head-cont:hover,
 .head-cont:focus {
   color: var(--blu-color);
+  outline: var(--blu-color);
 }
 .icon-envelope {
   fill: currentColor;
@@ -390,6 +394,7 @@ footer {
 .address:hover,
 .address:focus {
   color: var(--blu-color);
+  outline: var(--blu-color);
 }
 .con-foot {
   font-style: normal;
@@ -402,6 +407,7 @@ footer {
 .con-foot:hover,
 .con-foot:focus {
   color: var(--blu-color);
+  outline: var(--blu-color);
 }
 footer h2 {
   font-size: 14px;
@@ -427,7 +433,7 @@ footer h2 {
 .footer-social-section h2 {
   margin-bottom: 20px;
 }
-.footer-social-item {
+.footer-social-link {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -436,15 +442,17 @@ footer h2 {
   align-items: center;
   justify-content: center;
 }
-.footer-social-item + .footer-social-item {
-  margin-left: 10px;
-}
 .footer-social-link {
   fill: var(--white-color);
 }
-.footer-social-item:hover,
-.footer-social-item:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--blu-color);
+  outline: var(--blu-color);
+}
+
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
 }
 
 /* portfolio */
@@ -472,10 +480,12 @@ footer h2 {
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
+  border: var(--background-filter);
 }
 .filter {
   background-color: var(--background-filter);
   color: var(--black-color);
+  outline: var(--blu-color);
 }
 
 .filter:hover,
@@ -492,9 +502,7 @@ footer h2 {
   margin-left: calc(-1 * var(--margin-filter));
   margin-bottom: calc(-1 * var(--margin-filter));
 }
-.project-list img {
-  padding: 4px;
-}
+
 .project-list:hover,
 .project-list:focus {
   border: 1px solid #eeeeee;
@@ -537,5 +545,6 @@ footer h2 {
 .project :hover,
 .project :focus {
   background-color: var(--white-color);
+  outline: var(--blu-color);
 }
 /* end */
