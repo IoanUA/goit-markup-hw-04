@@ -193,17 +193,16 @@ h1 {
 }
 
 .advantage-icon-section {
-  display: block;
+  display: flex;
   width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 }
-.advantage-icon {
-  margin-left: 100px;
-  margin-top: 25px;
-}
+
 .advantage h3 {
   margin-bottom: 10px;
   font-style: normal;
@@ -245,6 +244,7 @@ h1 {
 .person {
   display: flex;
 }
+
 .person .person-list + .person-list {
   margin-left: 30px;
 }
@@ -272,6 +272,7 @@ h1 {
   color: var(--grey-color);
 }
 .person-list {
+  background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -296,16 +297,18 @@ h1 {
 .timate-socials-link {
   width: 44px;
   height: 44px;
-  background-color: var(--background-filter);
+  background-color: var(--white-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--icon-color);
 }
-.timate-socials-link:hover {
+.timate-socials-link:hover,
+.timate-socials-link:focus {
   background-color: var(--blu-color);
   color: var(--white-color);
+  outline: var(--blu-color);
 }
 .timate-socials-item + .timate-socials-item {
   margin-left: 10px;
@@ -337,21 +340,24 @@ h1 {
 }
 .clients-link {
   padding: 20px;
-  width: 170px;
-  height: 92px;
-  border: 2px solid var(--icon-color);
+
+  border: 1px solid var(--icon-color);
   border-radius: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
   fill: var(--icon-color);
 }
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border: 2px solid var(--blu-color);
   fill: var(--blu-color);
+  outline: var(--blu-color);
 }
 .clients-icon {
   color: #2196f3;
+  width: 170px;
+  height: 92px;
 }
 footer {
   padding-top: 60px;
@@ -429,13 +435,15 @@ footer h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: var(--white-color);
 }
 .footer-social-item + .footer-social-item {
   margin-left: 10px;
 }
-.footer-social-item:hover,
 .footer-social-link {
+  fill: var(--white-color);
+}
+.footer-social-item:hover,
+.footer-social-item:focus {
   background-color: var(--blu-color);
 }
 
