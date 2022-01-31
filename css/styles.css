@@ -28,6 +28,9 @@ ul {
   margin: 0px;
   padding: 0px;
 }
+img {
+  max-width: 100%;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -63,7 +66,7 @@ button {
 header {
   padding-top: 24px;
   padding-bottom: 24px;
-  outline: 1px solid #ECECEC;
+  outline: 1px solid #ececec;
 }
 .logo {
   margin-right: 93px;
@@ -162,16 +165,6 @@ h1 {
   color: var(--white-color);
 }
 .order {
-  display: flex;
-  margin: auto;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
-  color: var(--white-color);
-  background-color: var(--blu-color);
-}
-.order {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -180,7 +173,18 @@ h1 {
   justify-content: center;
   text-align: center;
   letter-spacing: 0.06em;
+  display: flex;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  border-radius: 4px;
+  color: var(--white-color);
+  background-color: var(--blu-color);
+  border: var(--blu-color);
 }
+
 .advantage-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -342,26 +346,29 @@ h1 {
 .clients-item + .clients-item {
   margin-left: 30px;
 }
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
 .clients-link {
-  padding: 20px;
-
-  border: 1px solid var(--icon-color);
+  height: 100%;
+  outline: 1px solid var(--icon-color);
   border-radius: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
   fill: var(--icon-color);
 }
+
 .clients-link:hover,
 .clients-link:focus {
-  border: 2px solid var(--blu-color);
+  outline: 1px solid var(--blu-color);
   fill: var(--blu-color);
-  outline: var(--blu-color);
 }
 .clients-icon {
+  width: 106px;
+  height: 60px;
   color: #2196f3;
-  width: 170px;
-  height: 92px;
 }
 footer {
   padding-top: 60px;
