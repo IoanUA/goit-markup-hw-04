@@ -469,6 +469,7 @@ footer h2 {
   background-color: var(--background-filter);
   color: var(--black-color);
 }
+
 .filter:hover,
 .filter:focus {
   background-color: var(--blu-color);
@@ -529,3 +530,4 @@ footer h2 {
 .project :focus {
   background-color: var(--white-color);
 }
+/* end */
